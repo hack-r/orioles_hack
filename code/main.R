@@ -5,6 +5,8 @@ setwd("..//data")
 
 pacman::p_load(Lahman, dplyr, pitchRx)
 
+reload <- T # Re-load saved data, if FALSE then scrape from source
+
 # Pull Raw Data -----------------------------------------------------------
 source("..//code//data.R")
 
