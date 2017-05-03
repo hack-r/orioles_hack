@@ -18,7 +18,9 @@ if(reload){
 
 if(reload){
   pitchfx <- readRDS("pitchfx.RDS")
+  gids    <- data(gids, package = "pitchRx")
 } else{
+  gids      <- data(gids, package = "pitchRx")
   dat       <- scrape("2015-01-01", "2017-12-31") # Features: "atbat"  "action" "pitch"  "po" "runner"
   locations <- select(dat$pitch, pitch_type, start_speed, px, pz, des, num, gameday_link)
   names     <- select(dat$atbat, pitcher, batter, pitcher_name, batter_name, num, gameday_link, event, stand)
