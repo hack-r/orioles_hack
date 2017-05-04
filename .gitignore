@@ -2,3 +2,5 @@
 .Rhistory
 .RData
 .Ruserdata
+dat.RDS
+/data/dat.RDS
